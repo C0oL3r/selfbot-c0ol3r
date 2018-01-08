@@ -4,7 +4,7 @@ const request = require('request');
 exports.run = (client, msg, args) => {
 	msg.delete();
 	request('https://api.uptimerobot.com/getMonitors?apiKey=u521977-0499e7f37766d8e20b6f751b&format=json', { json: true }, (err, res, body) => {
-		var json = body.slice(19); var json2 = json.substring(0, 576 - 2);
+		var json = body.slice(19); var json2 = json.substring(0, 576 - 1);
 		//console.log(json2);
 		var obj = JSON.parse(json2);
 		var onof1;
