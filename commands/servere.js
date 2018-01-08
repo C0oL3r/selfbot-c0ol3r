@@ -48,7 +48,7 @@ exports.run = (client, msg, args) => {
 		.setTimestamp()
 		.setColor('0x18f200')
 		.setFooter('By C0oL3r', client.user.avatarURL);
-		msg.channel.send(embed).then(msg => { msg.delete(5000) });
+		msg.channel.send(embed).then(msg => { msg.delete(10000) });
 	});
 };
 
