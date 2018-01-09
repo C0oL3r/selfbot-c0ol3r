@@ -13,26 +13,26 @@ exports.run = (client, msg, args) => {
 		var onofmess1;
 		var onofmess2;
 		
-		if(obj.monitors.monitor[0].status == 2) {
+		if(obj.monitors.monitor[1].status == 2) {
 			onof2 = 1;
 			if(onof2 == 1) {
 				onofmess2 = onofmes[0];
 			};
 		}
-		if(obj.monitors.monitor[0].status == 9) {
+		if(obj.monitors.monitor[1].status == 9) {
 			onof2 = 2;
 			if(onof2 == 2) {
 				onofmess2 = onofmes[1];
 			};
 		}
 		
-		if(obj.monitors.monitor[1].status == 2) {
+		if(obj.monitors.monitor[0].status == 2) {
 			onof1 = 1;
 			if(onof1 == 1) {
 				onofmess1 = onofmes[0];
 			};
 		}
-		if(obj.monitors.monitor[1].status == 9) {
+		if(obj.monitors.monitor[0].status == 9) {
 			onof1 = 2;
 			if(onof1 == 2) {
 				onofmess1 = onofmes[1];
